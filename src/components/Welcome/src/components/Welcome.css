@@ -1,3 +1,20 @@
-.src-components-welcome {
+.grid1 {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
 
+.grid2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }

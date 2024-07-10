@@ -1,10 +1,62 @@
 
 <section class="src-components-welcome">
-  <h1>Welcome</h1>
 
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+  <div class="grid1">
+    <i>
+      <h1>Welcome</h1>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+      </div>
+    </i>
   </div>
+  <div class="grid2">
+    <i>
+      <div :class="{'card border-success mb-3' : estado1, 'card text-white bg-success mb-3' : !estado1}" style="max-width: 20rem;">
+        <div class="card-header">Atributos</div>
+        <div class="card-body">
+          <h4 class="card-title">class</h4>
+          <p class="card-text">Con el atributo class utilizando eventos como @click y :bind podemos modificar las clases de los elementos de manera dinámica!!</p>
+          <div style="text-align: right;">
+            <button class="btn btn-secondary my-2 my-sm-0" @click="estado1=!estado1">Prueba</button>
+          </div>
+        </div>
+      </div>
+    </i>
+    <i>
+      <div :class="{'card border-info mb-3' : estado2, 'card text-white bg-info mb-3' : !estado2}" style="max-width: 20rem;">
+        <div class="card-header">Atributos</div>
+        <div class="card-body">
+          <h4 class="card-title">class</h4>
+          <p class="card-text">Con el atributo class utilizando eventos como @click y :bind podemos modificar las clases de los elementos de manera dinámica!!</p>
+          <div style="text-align: right;">
+            <button class="btn btn-secondary my-2 my-sm-0" @click="estado2=!estado2">Prueba</button>
+          </div>
+        </div>
+      </div>
+    </i>
+  </div>
+
+  <div class="grid1">
+    <i>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+    </i>
+  </div>
+
+
+
+
+
+
+
 
 </section>
 

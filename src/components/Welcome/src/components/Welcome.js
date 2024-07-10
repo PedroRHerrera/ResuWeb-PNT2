@@ -5,7 +5,8 @@ export default {
   props: [],
   data () {
     return {
-
+        estado1: true,
+        estado2: true,
     }
   },
   computed: {

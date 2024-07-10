@@ -1,7 +1,7 @@
 <template>
 
   <section class="src-components-navbar">
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav :class= "{'navbar navbar-expand-lg bg-primary' : estado, 'navbar navbar-expand-lg bg-dark'  : !estado}"  data-bs-theme="dark">
       <div class="container-fluid">
         <RouterLink class="navbar-brand" to="/">Inicio</RouterLink>
         <button
@@ -24,6 +24,7 @@
               <RouterLink class="nav-link" to="/conversor">Conversor</RouterLink>
             </li>
           </ul>
+          <button class="btn btn-secondary my-2 my-sm-0" @click="estado=!estado">cambiar fondo navbar</button>
         </div>
       </div>
     </nav>
@@ -37,7 +38,9 @@ export default {
   props: [],
   mounted() {},
   data() {
-    return {};
+    return {
+      estado: true,
+    };
   },
   methods: {},
   computed: {},
